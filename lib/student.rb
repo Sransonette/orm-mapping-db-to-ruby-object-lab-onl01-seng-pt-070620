@@ -94,8 +94,8 @@ class Student
        LIMIT ?
     SQL
 
-    #DB[:conn].execute(sql, x)
-    DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
+    DB[:conn].execute(sql, self.x)
+   
   end
   
   
